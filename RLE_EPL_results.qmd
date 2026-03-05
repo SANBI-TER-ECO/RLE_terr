@@ -7,7 +7,7 @@ library(readxl)
 
 # load RLE and EPL results, then combine these and check the unluckies
 RLE <- read.csv("outputs/RLE_full_compiled_adjusted.csv")
-EPL24 <- read.csv("outputs/results_df_EPL_2024_invasives2.csv")
+EPL24 <- read.csv("https://raw.githubusercontent.com/SANBI-TER-ECO/EPL_terr/main/outputs/results_df_EPL_2024_invasives2.csv")
 
 # ADD GET CODES
 getlist <- read_excel("data/EFG codes and pixel values  for IEM types.xlsx", sheet = "iem_efg_table")
