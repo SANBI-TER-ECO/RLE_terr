@@ -22,10 +22,6 @@ Undertake analyses usually done in excel in R - to improve reproducibility and t
 
 Import the results of a spatial analysis (R terra) that combined land cover data for 1990, 2014, 2018, 2020 and 2022 with national vegetation map data (2024 version). The cross tabulation (using R, Terra) of terrestrial ecosystem types (vegetation) data with land cover change data for South Africa is described in workflow "LC_change_7class_veg24.qmd". This allows for the calculation of the natural remaining extent for each ecosystem type at each time point across full extent of the ecosystem. The rate of habitat loss over the last 32 years can then be calculated allowing for assessment of each type using Criterion A2b. The metrics also allow for the extent of each type to be expressed as a percentage of its historical potential extent which is required for Criterion A3[@keith2013]; [@skowno2021c].
 
-```{mermaid}
-# add workflow
-```
-
 ### Load required packages
 
 ```{r}
@@ -37,8 +33,7 @@ library(PROJ)
 ### Import data from spatial analysis
 
 ```{r}
-rall <- read_csv("C:/Rdata/LCC_terr/outputs/lc7_rall.csv", show_col_types = FALSE) #import the version NOT masked to SA and save in chosen location 
-#file available at:https://github.com/askowno/LLC_terr/blob/main/outputs/lc7_rall.csv
+rall <- read_csv("https://raw.githubusercontent.com/SANBI-TER-ECO/LCC_terr_RLE/outputs/lc7_rall.csv", show_col_types = FALSE) 
 ```
 
 ### Adjust input data for RLE analysis

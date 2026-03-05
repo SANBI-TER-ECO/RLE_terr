@@ -36,15 +36,34 @@ library(PROJ) # if you dont load this something happens that prevents Terra read
 Import vegetation map 2024 (Jan 2025 version) from the ESRI geodatabase and the land cover map (4 class version) for 2022. The Terra and SF packages can handle many formats (shapefile, geopackage, geotif etc). For this terrestrial application the vegetation and land cover data need to be combined to create a remnants layer. For marine / freshwater applications where building a remnants layer may be unnecessary the vector data of the ecosystem features can be use used directly and no rasterization and masking steps are required.
 
 ```{r}
-#  make vegrem in R
-veg <- vect("C:/Users/skownoa/Dropbox/NBAwork/NLC_change/NLC_change.gdb", "NVM2024Final_IEM5_12_07012025")
-lc <- rast("C:/Users/skownoa/Dropbox/NBAwork/NLC_change/nlc2022_7class.tif")
+# Add data 
+# Base data path from .Renviron
+data_path <- Sys.getenv("DATA")
+
+# Add vegetation data
+# load veg data from esri gdb (note this is a folder not a file access route)
+gdb_path <- file.path(data_path, "NLC_change", "NLC_Change.gdb")
+
+veg <- vect(
+  gdb_path,
+  layer = "NVM2024Final_IEM5_12_07012025"
+)
+
+# Add land cover 2022
+lc_fp <- list.files(path = data_path, 
+                           pattern = "^nlc2022_7class\\.tif$",
+                           recursive = TRUE,
+                           full.names = TRUE)
+
+# Read in the file using terra package
+lc <- rast(lc_fp) 
+
 
 vegrast <- rasterize(veg,lc,"T_MAPCODE") 
 
-# Create a mask for land cover values 2 and 4
+# Create a mask for land cover values 2 - 7 (non natural classes)
 mask <- (lc !=1)
-# Apply the mask to raster_A
+# Apply the mask to veg
 vegrem <- mask(vegrast, mask, maskvalue=TRUE)
 ```
 

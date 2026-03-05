@@ -33,11 +33,10 @@ library(PROJ)
 ### Import data from spatial analysis
 
 ```{r}
-rall <- read_csv("C:/Rdata/LCC_terr/outputs/lc7_rall.csv", show_col_types = FALSE) #import the version NOT masked to SA and save in chosen location 
-#file available at:https://github.com/askowno/LLC_terr/blob/main/outputs/lc7_rall.csv
+rall <- read_csv("https://raw.githubusercontent.com/SANBI-TER-ECO/LCC_terr_RLE/v1.0/outputs/lc7_rall.csv", show_col_types = FALSE)
 
 # load EOO and AOO for Criterion B assessment (ongoing decline)
-eoo <- read_csv("C:/Rdata/RLE_terr/outputs/EOO_AOO_from_redlistr.csv")
+eoo <- read_csv("outputs/EOO_AOO_from_redlistr.csv")
 ```
 
 ### Adjust input data for RLE analysis
