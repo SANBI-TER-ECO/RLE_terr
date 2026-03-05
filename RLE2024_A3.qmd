@@ -33,7 +33,7 @@ library(PROJ)
 ### Import data from spatial analysis
 
 ```{r}
-rall <- read_csv("https://raw.githubusercontent.com/SANBI-TER-ECO/LCC_terr_RLE/outputs/lc7_rall.csv", show_col_types = FALSE) 
+rall <- read_csv("https://raw.githubusercontent.com/SANBI-TER-ECO/LCC_terr_RLE/main/outputs/lc7_rall.csv", show_col_types = FALSE) 
 ```
 
 ### Adjust input data for RLE analysis

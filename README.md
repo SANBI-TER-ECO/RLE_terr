@@ -16,18 +16,18 @@ April 2025
 
 ``` mermaid
 flowchart LR; 
-A[LCC_terr/LCC_change_7class_veg24.qmd] --> B[RLE_terr/RLE2024_A3.qmd] --> C(A3) --> D(RLE_terr/RLE_compilation.qmd) --> E[Terrestrial RLE 2025 results]; 
+A[LCC_terr_RLE/LCC_change_7class_veg24.qmd] --> B[RLE_terr/RLE2024_A3.qmd] --> C(A3) --> D(RLE_terr/RLE_compilation.qmd) --> E[Terrestrial RLE 2025 results]; 
 A --> F[RLE_terr/RLE2024_A2b.qmb] --> G[A2b] --> D; 
 F--> H[B1i and B2i] --> D ;
 I[RLE_terr/RLE_B_species.qmd] --> J[B1iii and B2iii] --> D ;
-K[LCC_terr/CoCT_LC_Condition.qmd] --> C; 
+K[LCC_terr_RLE/CoCT_LC_Condition.qmd] --> C; 
 K --> N ;
-L[LCC_terr/WC_KZN_MPL_LC.qmd] --> C; 
-M[LCC_terr/STEP_Condition.qmd] --> N[D3]; 
-O[LCC_terr/LittleKaroo_deg.qmd] --> N; 
-O[LCC_terr/NMB_Condition.qmd] --> N; 
+L[LCC_terr_RLE/WC_KZN_MPL_LC.qmd] --> C; 
+M[LCC_terr_RLE/STEP_Condition.qmd] --> N[D3]; 
+O[LCC_terr_RLE/LittleKaroo_deg.qmd] --> N; 
+O[LCC_terr_RLE/NMB_Condition.qmd] --> N; 
 P[Expert assessments and adjustments] --> E; 
-Q[INV_terr/Invasives_percentages_all.qmd] --> H;
+Q[INV_terr_RLE/Invasives_percentages_all.qmd] --> H;
 Q --> N;
 ```
 
@@ -93,7 +93,7 @@ The results from the supplementary assessments listed above were ingested and co
 Once all the results were compiled into a single table ([RLE_compilation.qmd](RLE_compilation.qmd)) the highest risk category for each ecosystem was selected, and each contributing criterion was captured. Key metrics, required in the reporting of RLE were also captured (e.g. extent remaining, EOO, AOO, percentage invaded) ([outputs/RLE_full_compiled.csv](outputs/RLE_full_compiled.csv)). Final adjustments and supplementary assessments undertaken by experts (Vlok & Vlok, 2020 [SKv11]; Jurgens et al., 2025 [SKr7, SKr2, SKr13]) and manual corrections of ecosystems on the threshold of categories were added as a final step ([outputs/RLE_full_compiled_adjusted.csv](outputs/RLE_full_compiled_adjusted.csv)).
 
 | RLE 2024 - Ecosystem count per category | RLE 2024 - Ecosystem extent per category |
-|----|----|
+|------------------------------------|------------------------------------|
 | ![](outputs/rle_barplot_sum.jpeg) | ![](outputs/rle_barplot_ext.jpeg) |
 
 #### Combined RLE and EPL results

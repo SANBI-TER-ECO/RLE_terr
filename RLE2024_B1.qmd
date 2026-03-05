@@ -1,5 +1,3 @@
-------------------------------------------------------------------------
-
 ---
 title: "Terrestrial Red List of Ecosystems (South Africa)"
 subtitle: "Spatial analysis workflow - RLE Criteria B1" 

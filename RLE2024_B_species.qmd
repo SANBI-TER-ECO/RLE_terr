@@ -10,14 +10,14 @@ library(tidyverse)
 # Import threatened plant species data - per ecosystem. Extracted from the RLS database in January 2025 by the SANBI TSU team. 
 
 th_sp_data <- read_csv("data/TH_SP_from_tsu.csv", show_col_types = FALSE)
-th_sp_data <- rename(th_sp_data, T_MAPCODE =VegCode)
+th_sp_data <- rename(th_sp_data, T_MAPCODE = VegCode)
 
 # load EOO and AOO for Criterion B assessment (ongoing decline)
 eoo <- read_csv("data/EOO_AOO_from_redlistr.csv")
 
 # load results of A3 to obtain extent remaining of each type
-results_A3w <- read_csv("outputs/results_A3w.csv")
-ext2022 <- results_A3w %>%
+results_A3 <- read_csv("outputs/results_A3.csv")
+ext2022 <- results_A3 %>%
   select(T_MAPCODE, `2022`) %>%
   rename(ext2022 = `2022`)
 
