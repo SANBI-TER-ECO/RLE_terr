@@ -22,9 +22,9 @@ inv_comb <- read.csv("https://raw.githubusercontent.com/SANBI-TER-ECO/INV_terr_R
 
 # note that two additionalcondition datasets were analysed but they showed very low leves of degradation and triggered no threatened ecosystems for any criteria - they  were ommitted from this compilation; 
 # Hardeveld degradation study (Bell et al. 2021) 
-hv_sum <- read.csv("https://raw.githubusercontent.com/SANBI-TER-ECO/LCC_terr_RLE/hv_sum.csv")
+hv_sum <- read.csv("https://raw.githubusercontent.com/SANBI-TER-ECO/LCC_terr_RLE/main/outputs/hv_sum.csv")
 # Little Karoo degradation study (Kirsten et al. 2023) 
-lkk_sum <- read.csv("https://raw.githubusercontent.com/SANBI-TER-ECO/LCC_terr_RLE/lkk_sum.csv")
+lkk_sum <- read.csv("https://raw.githubusercontent.com/SANBI-TER-ECO/LCC_terr_RLE/main/outputs/lkk_sum.csv")
 ```
 
 ### Criterion A

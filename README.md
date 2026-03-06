@@ -86,7 +86,7 @@ The results from the supplementary assessments listed above were ingested and co
 
 -   Combined invasive alien plant B1i, B2i and D3 results ([data_for_rle_inv_comb.csv](https://raw.githubusercontent.com/SANBI-TER-ECO/INV_terr_RLE/ouputs/data_for_rle_inv_comb.csv))
 
--   Note that two additional condition data sets were analysed but showed very low levels of degradation - and were omitted from this compilation: Hardeveld degradation study (Bell et al. 2021) <https://github.com/askowno/LLC_terr/blob/main/Hardeveld_Condition.qmd> & Little Karoo degradation study (Kirsten et al. 2023) <https://github.com/askowno/LLC_terr/blob/main/LittleKaroo_Kirsten_Condition.qmd>
+-   Note that two additional condition data sets were analysed but showed very low levels of degradation - and were omitted from this compilation: Hardeveld degradation study (Bell et al. 2021) <https://github.com/SANBI-TER-ECO/LLC_terr_RLE> (Hardeveld_Condition.qmd) & Little Karoo degradation study (LittleKaroo_Kirsten_Condition.qmd)(Kirsten et al. 2023).
 
 #### RLE overall, and status for each criterion calculated
 
@@ -98,7 +98,7 @@ Once all the results were compiled into a single table ([RLE_compilation.qmd](RL
 
 #### Combined RLE and EPL results
 
-The results of the RLE and EPL assessments can be viewed together at a type level : [ter_results_type_rle_epl](outputs/ter_results_type_rle_epl.csv)[.csv](outputs/ter_results_type_rle_epl.csv)
+The results of the RLE and EPL assessments can be viewed together at a type level : [ter_results_type_rle_epl.csv](outputs/ter_results_type_rle_epl.csv)
 
 These are simplified for integration purposes with other realms here: [ter_results_for_integration.csv](outpus/ter_results_for_integration.csv)
 
