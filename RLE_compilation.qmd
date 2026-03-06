@@ -10,7 +10,7 @@ lk_sum <- read.csv("https://raw.githubusercontent.com/SANBI-TER-ECO/LCC_terr_RLE
 coct_sum <- read.csv("https://raw.githubusercontent.com/SANBI-TER-ECO/LCC_terr_RLE/main/outputs/coct_sum.csv")
 nmb_sum <- read.csv("https://raw.githubusercontent.com/SANBI-TER-ECO/LCC_terr_RLE/main/outputs/nmb_sum.csv")
  
-# data from land cover chnage stats from NLC 7 class
+# data from land cover change stats from NLC 7 class
 results_A2b_B_ROD <- read.csv("outputs/results_A2b_B_ROD.csv")
 results_A3nat <- read.csv("outputs/results_A3.csv")
 
@@ -20,12 +20,11 @@ results_B_TH_SP <- read.csv("outputs/results_B_TH_SP.csv")
 # data from invasive layers (created in Invasive_percentagres_all.qmd)
 inv_comb <- read.csv("https://raw.githubusercontent.com/SANBI-TER-ECO/INV_terr_RLE/main/outputs/data_for_rle_inv_comb.csv")
 
-# summed max stacked raster  invasive coverage - over estimate of IAP cover
-#inv_max <- read.csv("https://raw.githubusercontent.com/SANBI-TER-ECO/INV_terr_RLE/main/outputs/data_for_rle_inv_max2.csv")
-
-# note that two additionalcondition datasets were analysed but they showed very low leves of degradation - and were ommitted from this compilation; 
-# Hardeveld degradation study (Bell et al. 2021) https://github.com/askowno/LLC_terr/blob/main/Hardeveld_Condition.qmd &  
-# Little Karoo degradation study (Kirsten et al. 2023) https://github.com/askowno/LLC_terr/blob/main/LittleKaroo_Kirsten_Condition.qmd
+# note that two additionalcondition datasets were analysed but they showed very low leves of degradation and triggered no threatened ecosystems for any criteria - they  were ommitted from this compilation; 
+# Hardeveld degradation study (Bell et al. 2021) 
+hv_sum <- read.csv("https://raw.githubusercontent.com/SANBI-TER-ECO/LCC_terr_RLE/hv_sum.csv")
+# Little Karoo degradation study (Kirsten et al. 2023) 
+lkk_sum <- read.csv("https://raw.githubusercontent.com/SANBI-TER-ECO/LCC_terr_RLE/lkk_sum.csv")
 ```
 
 ### Criterion A

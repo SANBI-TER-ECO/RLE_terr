@@ -3,6 +3,7 @@
 ```{r}
 library(tidyverse)
 library(sf)
+library(terra)
 library(readxl)
 
 # load RLE and EPL results, then combine these and check the unluckies
@@ -25,8 +26,9 @@ data_path <- Sys.getenv("DATA")
 # load veg data from esri gdb (note this is a folder not a file access route)
 gdb_path <- file.path(data_path, "NLC_change", "NLC_Change.gdb")
 
-veg <- vect(
-  gdb_path,
+# Read the layer
+veg <- st_read(
+  dsn = gdb_path,
   layer = "NVM2024Final_IEM5_12_07012025"
 )
 
