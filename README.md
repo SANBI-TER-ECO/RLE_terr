@@ -31,25 +31,25 @@ Q[INV_terr_RLE/Invasives_percentages_all.qmd] --> H;
 Q --> N;
 ```
 
-1.  Calculate Criterion A3 using the national land cover data 7 class version (SANBI 2024) RLE2024_A3.qmd;
+1.  Calculate Criterion A3 using the national land cover data 7 class version (SANBI 2024) [RLE2024_A3.qmd](RLE2024_A3.qmd);
 
-2.  Calculate Criterion A2b and B1i and B2i using national land cover data 7 class version (SANBI 2024) RLE2024_A2b.qmd;
+2.  Calculate Criterion A2b and B1i and B2i using national land cover data 7 class version (SANBI 2024) [RLE2024_A2b.qmd](RLE2024_A2b.qmd);
 
-3.  Calculate Criterion B1iii & B2iii using EOO and AOO plus a model of ongoing decline based on the Red List of Threatened Species database (SANBI 2024). At least 30 threatened species, with a density of at least 0.15 per km2, and 60% of threatened species threatened by either disrupted fire regimes, over-use by livestock or alien plant invasions RLE2024_B_species.qmd;
+3.  Calculate Criterion B1iii & B2iii using EOO and AOO plus a model of ongoing decline based on the Red List of Threatened Species database (SANBI 2024). At least 30 threatened species, with a density of at least 0.15 per km2, and 60% of threatened species threatened by either disrupted fire regimes, over-use by livestock or alien plant invasions [RLE2024_B_species.qmd](RLE2024_B_species.qmd);
 
 4.  Collate all assessments for all criteria RLE_compilation.qmd using the three assessments above plus these **supplementary** assessments:
 
--   Criterion A3 assessments using Western Cape (Cape Nature), KwaZulu-Natal (EKZN), Mpumalanga land cover data (MPTA). Workflow in the [LCC_terr_RLE]{.underline} repo WC_KZN_MPL_LC.qmd
+-   Criterion A3 assessments using Western Cape (Cape Nature), KwaZulu-Natal (EKZN), Mpumalanga land cover data (MPTA). Workflow in LCC_terr_RLE repo  [here](https://github.com/SANBI-TER-ECO/LCC_terr_RLE/blob/main/WC_KZN_MPL_LC.qmd).
 
--   Criterion A3, B1, B2, and D3 assessments using City of Cape Town BioNet data on land cover and ecosystem condition (CoCT, 2024) . Workflow in the [LCC_terr_RLE]{.underline} repo CoCT_LC_Condition.qmd
+-   Criterion A3, B1, B2, and D3 assessments using City of Cape Town BioNet data on land cover and ecosystem condition (CoCT, 2024) . Workflow in LCC_terr_RLE repo [here](https://github.com/SANBI-TER-ECO/LCC_terr_RLE/blob/main/CoCT_LC_Condition.qmd). 
 
--   Criterion B1, B2, D3 assessments using a combined invasive alien plant layer that includes: a) the National Invasive Alien Plant Survey data ([Kotze et al., 2025](https://doi.org/10.1007/s10530-025-03558-9)), b) the CFR Invasive Alien Tree Survey data ([Rebelo et al. 2024](https://doi.org/10.25413/SUN.27377211)), c) the MAPWAPS IAP data ([Skosana et al., 2024a](https://doi.org/10.25413/SUN.25050368), [Skosana et al., 2024b](https://doi.org/10.25413/SUN.25050401), [Cogill et al., 2024a](https://doi.org/10.25413/SUN.25066151), [Cogill et al., 2024b](https://doi.org/10.25413/SUN.25050314)), d) Unmgeni-uThukela EI for Water Security (EI4WS) project (SANBI, Geonest and INR 2024). Workflow in the [INV_terr_RLE]{.underline} repo Invasives_percentages_all.qmd
+-   Criterion B1, B2, D3 assessments using a combined invasive alien plant layer that includes: a) the National Invasive Alien Plant Survey data ([Kotze et al., 2025](https://doi.org/10.1007/s10530-025-03558-9)), b) the CFR Invasive Alien Tree Survey data ([Rebelo et al. 2024](https://doi.org/10.25413/SUN.27377211)), c) the MAPWAPS IAP data ([Skosana et al., 2024a](https://doi.org/10.25413/SUN.25050368), [Skosana et al., 2024b](https://doi.org/10.25413/SUN.25050401), [Cogill et al., 2024a](https://doi.org/10.25413/SUN.25066151), [Cogill et al., 2024b](https://doi.org/10.25413/SUN.25050314)), d) Unmgeni-uThukela EI for Water Security (EI4WS) project (SANBI, Geonest and INR 2024). Workflow in INV_terr_RLE repo [here](https://github.com/SANBI-TER-ECO/INV_terr_RLE/blob/main/Invasives_percentages_all.qmd)
 
--   Criterion D3 assessments using STEP ecosystem condition data (Lloyd et al., 2022). Workflow in the [LCC_terr_RLE]{.underline} repo STEP_Condition.qmd
+-   Criterion D3 assessments using STEP ecosystem condition data (Lloyd et al., 2022). Workflow in LCC_terr_RLE repo [here](https://github.com/SANBI-TER-ECO/LCC_terr_RLE/blob/main/STEP_Condition.qmd)
 
--   Criterion D3 assessments using Little Karoo ecosystem condition data (Thompson et al., 2009). Workflow in the [LCC_terr_RLE]{.underline} repo LittleKaroo_Condition.qmd
+-   Criterion D3 assessments using Little Karoo ecosystem condition data (Thompson et al., 2009). Workflow in LCC_terr_RLE repo [here](https://github.com/SANBI-TER-ECO/LCC_terr_RLE/blob/main/LittleKaroo_Condition.qmd)
 
--   Criterion D3 assessments using Nelson Mandela Bay Metro ecosystem condition data. Workflow in the [LCC_terr_RLE]{.underline} repo NMB_Condition.qmd
+-   Criterion D3 assessments using Nelson Mandela Bay Metro ecosystem condition data. Workflow in LCC_terr_RLE repo [here](https://github.com/SANBI-TER-ECO/LCC_terr_RLE/blob/main/NMB_Condition.qmd)
 
 #### Calculating metrics of ecosystem extent and assessing RLE Criteria A3
 
