@@ -37,7 +37,7 @@ Q --> N;
 
 3.  Calculate Criterion B1iii & B2iii using EOO and AOO plus a model of ongoing decline based on the Red List of Threatened Species database (SANBI 2024). At least 30 threatened species, with a density of at least 0.15 per km2, and 60% of threatened species threatened by either disrupted fire regimes, over-use by livestock or alien plant invasions [RLE2024_B_species.qmd](RLE2024_B_species.qmd);
 
-4.  Collate all assessments for all criteria RLE_compilation.qmd using the three assessments above plus these **supplementary** assessments:
+4.  Collate all assessments for all criteria [RLE_compilation.qmd](RLE_compilation.qmd) using the three assessments above plus these **supplementary** assessments:
 
 -   Criterion A3 assessments using Western Cape (Cape Nature), KwaZulu-Natal (EKZN), Mpumalanga land cover data (MPTA). Workflow in LCC_terr_RLE repo  [here](https://github.com/SANBI-TER-ECO/LCC_terr_RLE/blob/main/WC_KZN_MPL_LC.qmd).
 
@@ -53,18 +53,18 @@ Q --> N;
 
 #### Calculating metrics of ecosystem extent and assessing RLE Criteria A3
 
-RLE2024_A3.qmd: land cover metrics (LCC_terr_RLE/outputs/lc7_rall.csv) from the Land Cover workflow ([LC_change_7class_veg24.qmd](https://github.com/SANBI-TER-ECO/LCC_terr_RLE)) were ingested and summarised, and then used in assessment of RLE Criterion A3.
+[RLE2024_A3.qmd](RLE2024_A3.qmd): land cover metrics [(lc7_rall.csv)](https://raw.githubusercontent.com/SANBI-TER-ECO/LCC_terr_RLE/ouputs/lc7_rall.csv) from the Land Cover workflow ([LC_change_7class_veg24.qmd](https://github.com/SANBI-TER-ECO/LCC_terr_RLE)) were ingested and summarised, and then used in assessment of RLE Criterion A3.
 
 For Criterion A3 the key metric is the ecosystem extent remaining in natural condition at each time point expressed as a proportion of the historical / potential extent of the ecosystem type (e.g. extent2022/ext1750). This is used to assess Criterion A3 for each ecosystem type, ([outputs/results_A3.csv](outputs/results_A3.csv)).
 
-#### Calculating rate of decline in ecosystem extent and assessing RLE Criteria A2b and then using this in Criterion B
+#### Calculating rate of decline in ecosystem extent and assessing RLE Criteria A2b and then using this in Criterion B (as evidence of ongoing decline) 
 
-RLE2024_A2b.qmd: land cover change metrics [(lc7_rall.csv)](https://raw.githubusercontent.com/SANBI-TER-ECO/LCC_terr_RLE/ouputs/lc7_rall.csv) from the Land Cover Change workflow ([LC_change_7class_veg24.qmd](https://github.com/SANBI-TER-ECO/LCC_terr_RLE)) were ingested and summarised, and then used in assessment of RLE Criterion A2b.
+[RLE2024_A2b.qmd](RLE2024_A2b.qmd): land cover change metrics [(lc7_rall.csv)](https://raw.githubusercontent.com/SANBI-TER-ECO/LCC_terr_RLE/ouputs/lc7_rall.csv) from the Land Cover Change workflow ([LC_change_7class_veg24.qmd](https://github.com/SANBI-TER-ECO/LCC_terr_RLE)) were ingested and summarised, and then used in assessment of RLE Criterion A2b.
 
 For Criterion A2b the key metrics relate to the rate of habitat loss (decline in ecosystem extent), and the use of these to project ecosystem extent forward to 2040, and then assess the proportion of 1990 extent that will be lost over a 50 year period to 2040. This information is used to assess Criterion A2b for each ecosystem type. The results for A2 and B1irod and B2irod are captured in wide [(results_A2b.csv)](https://raw.githubusercontent.com/SANBI-TER-ECO/LCC_terr_RLE/ouputs/results_A2b.csv) format.
 
 1.  Compute the absolute rate of decline in ecosystem extent (ARD) over the period 1990 to 2022, the period 1990-2014, 2014-2022 and 2018-2022 (to provide recent trend).
-2.  This ARD can be used to estimate ecosystem extent in 2040 to allow for computation of Criterion A2b (recent and ongoing declines). The simplest approach is to calculate the rate of decline in natural extent per year and then multiply by 50 to get the projected extent in 2040 (i.e. ext2040 = ARD9022 / 32 \* 50 ).
+2.  This ARD can be used to estimate ecosystem extent in 2040 to allow for computation of Criterion A2b (recent and ongoing declines). The simplest approach is to calculate the rate of decline in natural extent per year and then multiply by 50 to get the projected extent in 2040 (i.e. ext2040 = ARD9022 / 32 * 50 ).
 3.  Then subtract this from the 1990 extent and divide by the 1990 ext to get the proportional decline in extent over a 50 year period (i.e. proportion lost over 50 years = (ext1990 - ext2040/ext1990) .
 4.  In addition to this we projected the 2040 extent using ARD for 1990-2014 (previous), for 2014-2022, for 2018-2022 (to provide recent trends).
 5.  To complement these simple calculations we included three models of decline i) linear, ii) quadratic and iii) a monotonic spline.
